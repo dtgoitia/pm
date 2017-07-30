@@ -1,16 +1,10 @@
 import React from 'react';
-// File system
-import fs from 'fs';
 // Login data
 import loginData from './../../loginData'
-const myUsername = loginData.username;
-const myPassword = loginData.password;
-const myApiToken = loginData.apiToken;
-const myWorkspace = loginData.workspaceId;
 
 // Toggl
 import TogglClient from 'toggl-api';
-const toggl = new TogglClient({apiToken: myApiToken});
+const myToggl = new TogglClient({apiToken: loginData.apiToken});
 
 // This is going to be passed from parent as props ----------
 const startDate = '2017-07-03'
@@ -19,9 +13,9 @@ const endDate = '2017-07-07'
 
 // Get detailed report data
 const pullTogglReport = (startDate, endDate) => {
-  toggl.detailedReport({
-    user_agent: myUsername,
-    workspace_id: myWorkspace,
+  myToggl.detailedReport({
+    user_agent: loginData.username,
+    workspace_id: loginData.workspaceId,
     since: startDate,
     until: endDate
   }, function(err, timeEntry) {
@@ -36,9 +30,6 @@ const pullTogglReport = (startDate, endDate) => {
     });
     console.log('summary:\n',summary);
     return summary 
-    // console.log('Writing data to \'output.json\' file...');
-    //fs.writeFileSync('./output2.json', JSON.stringify(summary, null, 4));
-    //console.log('File succesfuly written');
   });
 }
 
@@ -48,7 +39,6 @@ const consoleOutput = () => {
   console.log('loginData:', loginData);
   let pulledData = pullTogglReport(startDate,endDate);
   console.log('pulledData:', pulledData);
-  
 }
 
 class Test extends React.Component {
