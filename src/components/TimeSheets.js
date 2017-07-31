@@ -231,7 +231,14 @@ class TimeSheets extends React.Component {
   constructor (props) {
     super (props);
     this.state = {
-      db: {},
+      // Add an "empty" task object
+      db: [{
+        project: '-',
+        task: '-',
+        duration: null,
+        startDate: null,
+        endDate: null
+      }],
       thing: 'haha'
     }
 
