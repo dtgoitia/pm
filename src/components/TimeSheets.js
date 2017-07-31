@@ -17,33 +17,6 @@ import loginData from './../../loginData'
 import TogglClient from 'toggl-api';
 const myToggl = new TogglClient({apiToken: loginData.apiToken});
 
-// This is going to be passed from parent as props ----------
-const startDate = '2017-07-03';
-const endDate = '2017-07-07';
-// ----------------------------------------------------------
-
-const togglData = togglRawData.map((x) => {
-  return {
-    project: x.project,
-    task: x.task,
-    duration: x.duration,
-    startDate: new Date(x.startDate),
-    endDate: new Date(x.endtDate)
-  }
-})
-
-// Get dates of each task
-const allDates = togglData.map((x) => {
-  return x.date
-})
-// Get earliest date
-function GetEarliestDate(dateArray) {
-  return dateArray.reduce((pre, cur) => {
-    return Date.parse(pre) > Date.parse(cur) ? cur : pre;
-  })
-}
-let earliestDate = GetEarliestDate(allDates);
-
 // UI component: time sheet header
 function TSCalendarFirstRow() {
   return (
@@ -73,13 +46,13 @@ function TSCalendarRow(props) {
       <div className='TSCalenderRowProject'>{props.data.project}</div>
       <div className='TSCalenderRowTask'>{props.data.task}</div>
       <div className='TSCalenderRowDepartment'>{props.data.dep}</div>
-      <div className='TSCalenderRowMon' style={props.data.mon == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.mon}</div>
-      <div className='TSCalenderRowTue' style={props.data.tue == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.tue}</div>
-      <div className='TSCalenderRowWed' style={props.data.wed == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.wed}</div>
-      <div className='TSCalenderRowThu' style={props.data.thu == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.thu}</div>
-      <div className='TSCalenderRowFri' style={props.data.fri == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.fri}</div>
-      <div className='TSCalenderRowSat' style={props.data.sat == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.sat}</div>
-      <div className='TSCalenderRowTOTAL' style={props.data.tot == '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.tot}</div>
+      <div className='TSCalenderRowMon' style={props.data.mon === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.mon}</div>
+      <div className='TSCalenderRowTue' style={props.data.tue === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.tue}</div>
+      <div className='TSCalenderRowWed' style={props.data.wed === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.wed}</div>
+      <div className='TSCalenderRowThu' style={props.data.thu === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.thu}</div>
+      <div className='TSCalenderRowFri' style={props.data.fri === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.fri}</div>
+      <div className='TSCalenderRowSat' style={props.data.sat === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.sat}</div>
+      <div className='TSCalenderRowTOTAL' style={props.data.tot === '0.0' ? {color: 'var(--color-time-row-secondary)'} : null}>{props.data.tot}</div>
     </li>
   )
 }
@@ -111,8 +84,9 @@ function TSControllersPushButton(props) {
     <div
       id='TSControllersPush'
       onClick={()=>{
+        console.log('TSControllersPushButton onClick event called');
         props.see();
-        TSControllersPushData()
+        {/* TSControllersPushData() */}
       }}
     >
       PUSH
@@ -121,14 +95,35 @@ function TSControllersPushButton(props) {
 }
 // UI component: push button function
 function TSControllersPushData() {
-  alert('I am pushing data!');
+  console.log('TSControllersPushData function called');
+  
 }
 // UI component: pull button
 function TSControllersPullButton(props) {
   return (
     <div
       id='TSControllersPull'
-      onClick={()=>props.pull()}
+      onClick={()=>{
+        // Pull detailed report data from Toggl
+        myToggl.detailedReport({
+          user_agent: loginData.username,
+          workspace_id: loginData.workspaceId,
+          since: props.pullDates.startDate,
+          until: props.pullDates.endDate
+        }, function(err, timeEntry) {
+          let togglReport = timeEntry.data.map((task) => {
+            return {
+              project: task.project,
+              task: task.description,
+              duration: new Date(task.dur)/3600000,   // duration in hours
+              startDate: task.start,
+              endDate: task.end
+            }
+          });
+          // Store data within TimeSheet component state
+          props.pullFunction(togglReport);
+        });
+      }}
     >
       PULL
     </div>
@@ -139,7 +134,7 @@ class TSControllers extends React.Component {
   render() {
     return (
       <div className='TSControllers'>
-        <TSControllersPullButton pull={this.props.pull}/>
+        <TSControllersPullButton pullFunction={this.props.pull.pullFunction} pullDates={this.props.pull.pullDates}/>
         <TSControllersPushButton see={this.props.see}/>
       </div>
     )
@@ -152,12 +147,12 @@ function GetLastRawTotals(timesheetDataToPlot) {
 
   // Get total durations per week day
   timesheetDataToPlot.map((task)=>{
-    { task.mon != 0 ? totals.mon = totals.mon + parseFloat(task.mon) : null}
-    { task.tue != 0 ? totals.tue = totals.tue + parseFloat(task.tue) : null}
-    { task.wed != 0 ? totals.wed = totals.wed + parseFloat(task.wed) : null}
-    { task.thu != 0 ? totals.thu = totals.thu + parseFloat(task.thu) : null}
-    { task.fri != 0 ? totals.fri = totals.fri + parseFloat(task.fri) : null}
-    { task.sat != 0 ? totals.sat = totals.sat + parseFloat(task.sat) : null}
+    { task.mon !== 0 ? totals.mon = totals.mon + parseFloat(task.mon) : null}
+    { task.tue !== 0 ? totals.tue = totals.tue + parseFloat(task.tue) : null}
+    { task.wed !== 0 ? totals.wed = totals.wed + parseFloat(task.wed) : null}
+    { task.thu !== 0 ? totals.thu = totals.thu + parseFloat(task.thu) : null}
+    { task.fri !== 0 ? totals.fri = totals.fri + parseFloat(task.fri) : null}
+    { task.sat !== 0 ? totals.sat = totals.sat + parseFloat(task.sat) : null}
   })
 
   // Get total value
@@ -186,52 +181,23 @@ function createCalendarEntry(x) {
     project: x.project,
     task: x.task,
     dep: 'Civil',
-    mon: x.startDate.getDay() == 1 ? x.duration : '0.0',
-    tue: x.startDate.getDay() == 2 ? x.duration : '0.0',
-    wed: x.startDate.getDay() == 3 ? x.duration : '0.0',
-    thu: x.startDate.getDay() == 4 ? x.duration : '0.0',
-    fri: x.startDate.getDay() == 5 ? x.duration : '0.0',
-    sat: x.startDate.getDay() == 6 ? x.duration : '0.0',
+    mon: x.startDate.getDay() === 1 ? x.duration : '0.0',
+    tue: x.startDate.getDay() === 2 ? x.duration : '0.0',
+    wed: x.startDate.getDay() === 3 ? x.duration : '0.0',
+    thu: x.startDate.getDay() === 4 ? x.duration : '0.0',
+    fri: x.startDate.getDay() === 5 ? x.duration : '0.0',
+    sat: x.startDate.getDay() === 6 ? x.duration : '0.0',
     tot: '---'
   })
 }
-function parseData(togglData) {
-  return togglData.map((x) => {
-    x.startDate = new Date(x.startDate);
-    x.endDate = new Date(x.endDate);
-    x.duration = RoundToNearest(x.duration, 0.25);
-    return x
-  }).map((x) => createCalendarEntry(x))
-}
-
-// Get detailed report data
-const pullTogglReport = (startDate, endDate) => {
-  return myToggl.detailedReport({
-    user_agent: loginData.username,
-    workspace_id: loginData.workspaceId,
-    since: startDate,
-    until: endDate
-  }, function(err, timeEntry) {
-    let summary = timeEntry.data.map((task) => {
-      return {
-        project: task.project,
-        task: task.description,
-        duration: new Date(task.dur)/3600000,   // duration in hours
-        startDate: task.start,
-        endDate: task.end
-      }
-    });
-    // console.log('summary:\n',summary);
-    // return summary
-  });
-};
 
 // TimeSheets component ----------------------------------------------------
 class TimeSheets extends React.Component {
   constructor (props) {
     super (props);
     this.state = {
-      // Add an "empty" task object
+      // db: member to store the raw data of Toggl before formating
+      // Add an "empty" task object for rendering
       db: [{
         project: '-',
         task: '-',
@@ -239,37 +205,57 @@ class TimeSheets extends React.Component {
         startDate: null,
         endDate: null
       }],
-      thing: 'haha'
+      // Contains final data to be ploted in the timesheet
+      dataToPlot: [
+        {
+          project: '-',
+          task: '-',
+          duration: null,
+          startDate: new Date(null),
+          endDate: new Date(null)
+        }
+      ],
+      plotStartDate: '2017-07-03',
+      plotEndDate:  '2017-07-07'
     }
 
-    this.pullData = this.pullData.bind(this);
+    // Bind TimeSheets methods' this keyword to TimeSheet component
+    this.storeData = this.storeData.bind(this);
     this.seeState = this.seeState.bind(this);
-    this.updateTimesheetDataBase = this.updateTimesheetDataBase.bind(this);
   }
 
-  updateTimesheetDataBase(data){
-    // Update state's db member
+  // Pull data from Toggl and add it to the state of TimeSheets component
+  storeData(data) {
+    // Store raw data fetched from Toggl
     this.setState(()=>{
       return({db: data})
     });
-  }
 
-  pullData() {
-    // Pull data from Toggl and add it to the state of TimeSheets component
+    // Format data:
+    //  - set startDate and endDate as Date type
+    //  - round duration to nearest 0.25
     this.setState(()=>{
-      return({db: 'newTogglDataBase'})
+      return({dataToPlot: this.state.db.map((x) => {
+        x.startDate = new Date(x.startDate);
+        x.endDate = new Date(x.endDate);
+        x.duration = RoundToNearest(x.duration, 0.25);
+        return x
+      })})
     });
-    
-    console.log('this.state.db:', this.state.db);
   }
 
   seeState() {
-    console.log('TimeSheet.state:', this.state);
+    console.log('TimeSheet.state:\n', this.state);
   }
 
   render () {
-    // raw data
-    const timesheetDataToPlot = parseData(togglData);
+    // Get first day of the week ploted
+    const earliestDate = this.state.dataToPlot
+      .map((x) => x.startDate) // Get each task date
+      .reduce((pre, cur) => Date.parse(pre) > Date.parse(cur) ? cur : pre); // Get earliest date
+    // Prepare dataToPlot
+    const timesheetDataToPlot = this.state.dataToPlot.map((x) => createCalendarEntry(x));
+    // Calculate last row values (totals) accoring to dataToPlot
     const lastRowTotals = GetLastRawTotals(timesheetDataToPlot);
 
     return (
@@ -282,7 +268,7 @@ class TimeSheets extends React.Component {
           })}
           <TSCalendarLastRow totals={lastRowTotals}/>
         </ul>
-        <TSControllers pull={this.pullData} see={this.seeState} />
+        <TSControllers pull={{pullFunction: this.storeData, pullDates: {startDate: this.state.plotStartDate, endDate: this.state.plotEndDate}}} see={this.seeState} />
       </div>
     )
   }
