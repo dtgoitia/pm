@@ -20,7 +20,7 @@ class App extends React.Component {
     // Pass props to parent class
     super (props);
     this.state = {
-      testMode: false,
+      testMode: true,
       // selectedMenu: 'Overview'
       // selectedMenu: 'Dashboard'
       selectedMenu: 'Time sheets'
