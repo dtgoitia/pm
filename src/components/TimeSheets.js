@@ -216,12 +216,14 @@ class TimeSheets extends React.Component {
         }
       ],
       plotStartDate: '2017-07-03',
-      plotEndDate:  '2017-07-07'
+      plotEndDate:  '2017-07-07',
+      projectList: '',
     }
 
     // Bind TimeSheets methods' this keyword to TimeSheet component
     this.storeData = this.storeData.bind(this);
     this.seeState = this.seeState.bind(this);
+    this.getProjects = this.getProjects.bind(this);
   }
 
   // Pull data from Toggl and add it to the state of TimeSheets component
@@ -242,10 +244,29 @@ class TimeSheets extends React.Component {
         return x
       })})
     });
+
+    // Get projects
+    let projectArray = [];
+    this.state.db.map((x)=>{
+      if (-1 === projectArray.indexOf(x.project)) {
+        projectArray.push(x.project);
+      }
+    });
+    this.setState(()=>{
+      return (
+        {projectList: projectArray}
+      )
+    });
+  }
+
+  getProjects() {
+    let existingProjects = this.state.projectList;
+    console.log('existingProjects:', existingProjects);
   }
 
   seeState() {
-    console.log('TimeSheet.state:\n', this.state);
+    //console.log('TimeSheet.state:\n', this.state);
+    this.getProjects();
   }
 
   render () {
