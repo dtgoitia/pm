@@ -9,18 +9,23 @@ class Test extends React.Component {
   constructor(props){
     super();
     this.state = {
-      title: 'Mr.'
+      title1: 'Mr.'
     }
   }
 
   handleChange(event) {
     this.setState({title: event.target.value})
+    console.log('event.target.value:', event.target.value);
   }
 
   render(){
     // Clear console
-    setTimeout(consoleOutput, 1000);
-    return <input type="text" name="title" value={this.state.title} onChange={this.handleChange.bind(this)} />
+    return (
+      <div>
+        <input type="text" name1="title" placeholder='This is a placehorlder string' value={this.state.title} onChange={this.handleChange.bind(this)} />
+        <input type="text" name2="title" placeholder='This is a placehorlder string' value={this.state.title} onChange={this.handleChange.bind(this)} />
+      </div>
+    )
   }
 }
 
