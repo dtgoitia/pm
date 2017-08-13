@@ -194,8 +194,8 @@ class TSProjectFilter extends React.Component {
       })
     }
     return (
-      <div className='ProjectFilter'>
-        <ul>
+      <div>
+        <ul className='ProjectFilter'>
           {TSProjectFilterItemList}
         </ul>
       </div>
@@ -229,6 +229,7 @@ class TSProjectFilterItem extends React.Component {
   render() {
     return (
       <div
+      className='ProjectFilterItem'
       onClick={this.updateState.bind(null)}
       style={ this.state.selected === true ? { backgroundColor: 'var(--color-time-row-back)'} : { backgroundColor: 'black'}}
       >

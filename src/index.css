@@ -266,8 +266,9 @@ li {
 /* PROJECT FILTER ------------------------- */
 .ProjectFilter {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
+  flex-wrap: wrap;
 
   color: var(--color-header-normal);
 
@@ -276,6 +277,8 @@ li {
 .ProjectFilter li {
   margin: 5px;
   cursor: pointer;
+  align-self: stretch;
+  width: 32%;
 }
 
 /* TEST --------------------------------- */
