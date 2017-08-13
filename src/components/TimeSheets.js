@@ -1,14 +1,5 @@
 import React from 'react';
 import dateformat from 'dateformat';
-// import Toggl from './Toggl';
-// import togglRawData from './../../output.json';
-let togglRawData = [{
-  project: '-',
-  task: '-',
-  duration: null,
-  startDate: null,
-  endDate: null
-}];
 
 // Login data
 import loginData from './../../loginData'
@@ -86,7 +77,6 @@ function TSControllersPushButton(props) {
       onClick={()=>{
         console.log('TSControllersPushButton onClick event called');
         props.see();
-        {/* TSControllersPushData() */}
       }}
     >
       PUSH
@@ -94,10 +84,10 @@ function TSControllersPushButton(props) {
   )
 }
 // UI component: push button function
-function TSControllersPushData() {
-  console.log('TSControllersPushData function called');
+// function TSControllersPushData() {
+//   console.log('TSControllersPushData function called');
   
-}
+// }
 // UI component: pull button
 function TSControllersPullButton(props) {
   return (
@@ -146,13 +136,13 @@ function GetLastRawTotals(timesheetDataToPlot) {
   let totals = { mon: 0, tue: 0, wed: 0, thu: 0, fri: 0, sat: 0, tot: 0 };
 
   // Get total durations per week day
-  timesheetDataToPlot.map((task)=>{
-    { task.mon !== 0 ? totals.mon = totals.mon + parseFloat(task.mon) : null}
-    { task.tue !== 0 ? totals.tue = totals.tue + parseFloat(task.tue) : null}
-    { task.wed !== 0 ? totals.wed = totals.wed + parseFloat(task.wed) : null}
-    { task.thu !== 0 ? totals.thu = totals.thu + parseFloat(task.thu) : null}
-    { task.fri !== 0 ? totals.fri = totals.fri + parseFloat(task.fri) : null}
-    { task.sat !== 0 ? totals.sat = totals.sat + parseFloat(task.sat) : null}
+  timesheetDataToPlot.forEach((task)=>{
+    if (task.mon !== 0) totals.mon += parseFloat(task.mon)
+    if (task.tue !== 0) totals.tue += parseFloat(task.tue)
+    if (task.wed !== 0) totals.wed += parseFloat(task.wed)
+    if (task.thu !== 0) totals.thu += parseFloat(task.thu)
+    if (task.fri !== 0) totals.fri += parseFloat(task.fri)
+    if (task.sat !== 0) totals.sat += parseFloat(task.sat)
   })
 
   // Get total value
@@ -247,7 +237,7 @@ class TimeSheets extends React.Component {
 
     // Get projects
     let projectArray = [];
-    this.state.db.map((x)=>{
+    this.state.db.forEach((x)=>{
       if (-1 === projectArray.indexOf(x.project)) {
         projectArray.push(x.project);
       }
