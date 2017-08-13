@@ -263,6 +263,21 @@ li {
   background-color: var(--color-time-button-hover);
 }
 
+/* PROJECT FILTER ------------------------- */
+.ProjectFilter {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  color: var(--color-header-normal);
+
+  background-color: var(--color-header-background);
+}
+.ProjectFilter li {
+  margin: 5px;
+  cursor: pointer;
+}
+
 /* TEST --------------------------------- */
 .test {
   max-width: 500px;

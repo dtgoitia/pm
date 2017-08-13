@@ -181,6 +181,44 @@ function createCalendarEntry(x) {
   })
 }
 
+// TSProjectFilter component -----------------------------------------------
+class TSProjectFilter extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    let TSProjectFilterItemList = 'no projects!'
+    if (this.props.allProjects) {
+      TSProjectFilterItemList = this.props.allProjects.map((x)=>{
+        return <li key={x}><TSProjectFilterItem project={x} /></li>
+      })
+    }
+    return (
+      <div className='ProjectFilter'>
+        <ul>
+          {TSProjectFilterItemList}
+        </ul>
+      </div>
+    )
+  }
+}
+
+
+// TSProjectFilterItem component -----------------------------------------------
+class TSProjectFilterItem extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { selected: false }
+  }
+  render() {
+    return (
+      <span>
+        {this.props.project}
+      </span>
+    )
+  }
+}
+
 // TimeSheets component ----------------------------------------------------
 class TimeSheets extends React.Component {
   constructor (props) {
@@ -250,8 +288,8 @@ class TimeSheets extends React.Component {
   }
 
   getProjects() {
-    let existingProjects = this.state.projectList;
-    console.log('existingProjects:', existingProjects);
+    // let existingProjects = this.state.projectList;
+    console.log('TimeSheet.getProjects() runned');
   }
 
   seeState() {
@@ -268,10 +306,13 @@ class TimeSheets extends React.Component {
     const timesheetDataToPlot = this.state.dataToPlot.map((x) => createCalendarEntry(x));
     // Calculate last row values (totals) accoring to dataToPlot
     const lastRowTotals = GetLastRawTotals(timesheetDataToPlot);
+    let existingProjects = this.state.projectList;
+    console.log('existingProjects:', existingProjects);
 
     return (
       <div className='TS_Container'>
         Calendar {dateformat(earliestDate, 'd mmm')}
+        <TSProjectFilter allProjects={existingProjects ? existingProjects : null} />
         <ul className='TS_Calendar'>
           <TSCalendarFirstRow />
           {timesheetDataToPlot.map(function (x,index) {
