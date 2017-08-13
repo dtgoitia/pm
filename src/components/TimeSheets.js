@@ -208,13 +208,32 @@ class TSProjectFilter extends React.Component {
 class TSProjectFilterItem extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { selected: false }
+    this.state = { selected: true }
+    
+    this.updateState = this.updateState.bind(this);
   }
+
+  updateState() {
+    let msg = this.props.project + ' project '
+    if (this.state.selected === true) {
+      msg += 'unselected'
+      this.setState({ selected: false })
+    } else {
+      msg += 'selected'
+      this.setState({ selected: true })
+    }
+    // Print message on log
+    console.log(msg);
+  }
+
   render() {
     return (
-      <span>
+      <div
+      onClick={this.updateState.bind(null)}
+      style={ this.state.selected === true ? { backgroundColor: 'var(--color-time-row-back)'} : { backgroundColor: 'black'}}
+      >
         {this.props.project}
-      </span>
+      </div>
     )
   }
 }
