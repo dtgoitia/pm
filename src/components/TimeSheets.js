@@ -232,7 +232,7 @@ class TSProjectFilterItem extends React.Component {
       <div
       className='ProjectFilterItem'
       onClick={this.updateState.bind(null)}
-      style={ this.state.selected === true ? { backgroundColor: 'var(--color-time-row-back)'} : { backgroundColor: 'black'}}
+      style={ this.state.selected === true ? { backgroundColor: 'var(--color-project-filter-selected)'} : { backgroundColor: 'var(--color-project-filter-unselected)'}}
       >
         {this.props.project}
       </div>

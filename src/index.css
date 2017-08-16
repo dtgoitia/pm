@@ -24,6 +24,8 @@
   --color-time-row-secondary:  hsl(0, 0%, 45%);
   --color-time-button-normal:  hsl(212.4, 16.5%, 28%);
   --color-time-button-hover: var(--color-tab-hover);
+  --color-project-filter-selected: var(--color-time-row-back-hover);
+  --color-project-filter-unselected: var(--color-header-normal);
 
   /* PROJECT MANAGEMENT DASHBOARD */
   --color-pm-background: var(--color-tab-normal);
@@ -267,18 +269,21 @@ li {
 .ProjectFilter {
   display: flex;
   justify-content: left;
-  margin: 0;
   flex-wrap: wrap;
-
-  color: var(--color-header-normal);
-
-  background-color: var(--color-header-background);
+  margin: 0;
+  font-weight: 300;
+  color: var(--color-h1);
 }
 .ProjectFilter li {
-  margin: 5px;
+  justify-content: left;
   cursor: pointer;
   align-self: stretch;
-  width: 32%;
+  width: 33%;
+}
+.ProjectFilter li div {
+  margin: 3px;
+  padding: 7px 10px;
+  border-radius: 6px;
 }
 
 /* TEST --------------------------------- */
