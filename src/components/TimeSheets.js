@@ -190,7 +190,7 @@ class TSProjectFilter extends React.Component {
     let TSProjectFilterItemList = 'no projects!'
     if (this.props.allProjects) {
       TSProjectFilterItemList = this.props.allProjects.map((x)=>{
-        return <li key={x}><TSProjectFilterItem project={x} /></li>
+        return <li key={x}><TSProjectFilterItem project={x} hideProject={this.props.hideProject} /></li>
       })
     }
     return (
@@ -218,6 +218,7 @@ class TSProjectFilterItem extends React.Component {
     if (this.state.selected === true) {
       msg += 'unselected'
       this.setState({ selected: false })
+      this.props.hideProject(this.props.project);
     } else {
       msg += 'selected'
       this.setState({ selected: true })
@@ -253,7 +254,7 @@ class TimeSheets extends React.Component {
         startDate: null,
         endDate: null
       }],
-      // Contains final data to be ploted in the timesheet
+      // dataPlot contains final data to be ploted in the timesheet
       dataToPlot: [
         {
           project: '-',
@@ -265,13 +266,28 @@ class TimeSheets extends React.Component {
       ],
       plotStartDate: '2017-07-03',
       plotEndDate:  '2017-07-07',
+      // projectList: member to store all the projects existing in db
       projectList: '',
+      // projectsToPlot: member to store all the projects to plot
+      projectsToPlot: ''
     }
 
     // Bind TimeSheets methods' this keyword to TimeSheet component
     this.storeData = this.storeData.bind(this);
     this.seeState = this.seeState.bind(this);
     this.getProjects = this.getProjects.bind(this);
+    this.hideProject = this.hideProject.bind(this);
+    // this.showProject = this.showProject.bind(this);
+  }
+
+  // Remove a project from to be shown from this.state.projectToPlot
+  hideProject(project) {
+    console.log('hideProject triggered. UNDER CONSTRUCTION');
+    let projectArray = [];
+    this.state.projectsToPlot.forEach((plotedProject)=>{
+      if (plotedProject !== project) projectArray.push(plotedProject);
+    });
+    this.setState(()=>{ return ({ projectsToPlot: projectArray }) });
   }
 
   // Pull data from Toggl and add it to the state of TimeSheets component
@@ -302,7 +318,10 @@ class TimeSheets extends React.Component {
     });
     this.setState(()=>{
       return (
-        {projectList: projectArray}
+        {
+          projectList: projectArray,
+          projectsToPlot: projectArray
+        }
       )
     });
   }
@@ -310,6 +329,8 @@ class TimeSheets extends React.Component {
   getProjects() {
     // let existingProjects = this.state.projectList;
     console.log('TimeSheet.getProjects() runned');
+    console.log('this.state.projectList:', this.state.projectList);
+    console.log('this.state.projectsToPlot:', this.state.projectsToPlot);
   }
 
   seeState() {
@@ -332,7 +353,10 @@ class TimeSheets extends React.Component {
     return (
       <div className='TS_Container'>
         Calendar {dateformat(earliestDate, 'd mmm')}
-        <TSProjectFilter allProjects={existingProjects ? existingProjects : null} />
+        <TSProjectFilter
+          allProjects={existingProjects ? existingProjects : null}
+          hideProject={this.hideProject}
+        />
         <ul className='TS_Calendar'>
           <TSCalendarFirstRow />
           {timesheetDataToPlot.map(function (x,index) {
@@ -340,7 +364,10 @@ class TimeSheets extends React.Component {
           })}
           <TSCalendarLastRow totals={lastRowTotals}/>
         </ul>
-        <TSControllers pull={{pullFunction: this.storeData, pullDates: {startDate: this.state.plotStartDate, endDate: this.state.plotEndDate}}} see={this.seeState} />
+        <TSControllers
+          pull={{pullFunction: this.storeData, pullDates: {startDate: this.state.plotStartDate, endDate: this.state.plotEndDate}}}
+          see={this.seeState}
+        />
       </div>
     )
   }
