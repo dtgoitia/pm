@@ -283,11 +283,25 @@ class TimeSheets extends React.Component {
   // Remove a project from to be shown from this.state.projectToPlot
   hideProject(project) {
     console.log('hideProject triggered. UNDER CONSTRUCTION');
+    // projectArray : stores new list of projects to plot (after
+    // removing passed "project")
     let projectArray = [];
     this.state.projectsToPlot.forEach((plotedProject)=>{
       if (plotedProject !== project) projectArray.push(plotedProject);
     });
+    // Update this.state.projectsToPlot
     this.setState(()=>{ return ({ projectsToPlot: projectArray }) });
+
+    // dataToPlotVar : stores new list of data to plot (after
+    // removing passed "project")
+    let dataToPlotVar = [];
+    this.state.db.forEach((x)=>{
+      if (-1 !== projectArray.indexOf(x.project) ) {
+        dataToPlotVar.push(x);
+      }
+    });
+    // Update this.state.dataToPlot
+    this.setState((x)=> { dataToPlot: dataToPlotVar } );
   }
 
   // Pull data from Toggl and add it to the state of TimeSheets component
@@ -339,6 +353,7 @@ class TimeSheets extends React.Component {
   }
 
   render () {
+    console.log('this.state.dataToPlot:', this.state.dataToPlot);
     // Get first day of the week ploted
     const earliestDate = this.state.dataToPlot
       .map((x) => x.startDate) // Get each task date
