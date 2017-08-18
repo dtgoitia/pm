@@ -190,7 +190,15 @@ class TSProjectFilter extends React.Component {
     let TSProjectFilterItemList = 'no projects!'
     if (this.props.allProjects) {
       TSProjectFilterItemList = this.props.allProjects.map((x)=>{
-        return <li key={x}><TSProjectFilterItem project={x} hideProject={this.props.hideProject} /></li>
+        return (
+          <li key={x}>
+            <TSProjectFilterItem
+              project={x}
+              hideProject={this.props.hideProject}
+              showProject={this.props.showProject}
+            />
+          </li>
+        )
       })
     }
     return (
@@ -217,11 +225,12 @@ class TSProjectFilterItem extends React.Component {
     let msg = this.props.project + ' project '
     if (this.state.selected === true) {
       msg += 'unselected'
-      this.setState({ selected: false })
+      this.setState({ selected: false });
       this.props.hideProject(this.props.project);
     } else {
       msg += 'selected'
-      this.setState({ selected: true })
+      this.setState({ selected: true });
+      this.props.showProject(this.props.project);
     }
     // Print message on log
     console.log(msg);
@@ -277,10 +286,11 @@ class TimeSheets extends React.Component {
     this.seeState = this.seeState.bind(this);
     this.getProjects = this.getProjects.bind(this);
     this.hideProject = this.hideProject.bind(this);
+    this.showProject = this.showProject.bind(this);
     // this.showProject = this.showProject.bind(this);
   }
 
-  // Remove a project from to be shown from this.state.projectToPlot
+  // Remove a project to be shown from this.state.projectToPlot
   hideProject(project) {
     // projectArray : stores new list of projects to plot (after
     // removing passed "project")
@@ -314,6 +324,31 @@ class TimeSheets extends React.Component {
     }
     // Update this.state.dataToPlot
     this.setState(()=>{ return ({ dataToPlot: dataToPlotVar }) });
+  }
+
+  // Add a project to be shown from this.state.projectToPlot
+  showProject(project) {
+    // projectArray : stores new list of projects to plot (after
+    // adding passed "project")
+    let projectArray = this.state.projectsToPlot;
+    if ( -1 === this.state.projectsToPlot.indexOf(project) ) {
+      // Add project to projectArray
+      projectArray.push(project);
+      // Update this.state.projectsToPlot
+      this.setState(()=>{ return ({ projectsToPlot: projectArray }) });
+
+      // dataToPlotVar : stores new list of data to plot (after
+      // removing passed "project")
+      let dataToPlotVar = [];
+      this.state.db.forEach((x)=>{
+        if (-1 !== projectArray.indexOf(x.project) ) {
+          dataToPlotVar.push(x);
+        }
+      });
+
+      // Update this.state.dataToPlot
+      this.setState(()=>{ return ({ dataToPlot: dataToPlotVar }) });
+    }
   }
 
   // Pull data from Toggl and add it to the state of TimeSheets component
@@ -365,6 +400,7 @@ class TimeSheets extends React.Component {
   }
 
   render () {
+    console.log('this.state:', this.state);
     // Get first day of the week ploted
     const earliestDate = this.state.dataToPlot
       .map((x) => x.startDate) // Get each task date
@@ -383,6 +419,7 @@ class TimeSheets extends React.Component {
         <TSProjectFilter
           allProjects={existingProjects ? existingProjects : null}
           hideProject={this.hideProject}
+          showProject={this.showProject}
         />
         <ul className='TS_Calendar'>
           <TSCalendarFirstRow />
