@@ -282,7 +282,6 @@ class TimeSheets extends React.Component {
 
   // Remove a project from to be shown from this.state.projectToPlot
   hideProject(project) {
-    console.log('hideProject triggered. UNDER CONSTRUCTION');
     // projectArray : stores new list of projects to plot (after
     // removing passed "project")
     let projectArray = [];
@@ -300,8 +299,21 @@ class TimeSheets extends React.Component {
         dataToPlotVar.push(x);
       }
     });
+
+    // When there is not data to plot, set dataToPlot to its the default initial value
+    if (dataToPlotVar.length === 0) {
+      dataToPlotVar = [
+        {
+          project: '-',
+          task: '-',
+          duration: null,
+          startDate: new Date(null),
+          endDate: new Date(null)
+        }
+      ]
+    }
     // Update this.state.dataToPlot
-    this.setState((x)=> { dataToPlot: dataToPlotVar } );
+    this.setState(()=>{ return ({ dataToPlot: dataToPlotVar }) });
   }
 
   // Pull data from Toggl and add it to the state of TimeSheets component
@@ -353,17 +365,17 @@ class TimeSheets extends React.Component {
   }
 
   render () {
-    console.log('this.state.dataToPlot:', this.state.dataToPlot);
     // Get first day of the week ploted
     const earliestDate = this.state.dataToPlot
       .map((x) => x.startDate) // Get each task date
       .reduce((pre, cur) => Date.parse(pre) > Date.parse(cur) ? cur : pre); // Get earliest date
-    // Prepare dataToPlot
+    
+      // Prepare dataToPlot
     const timesheetDataToPlot = this.state.dataToPlot.map((x) => createCalendarEntry(x));
+    
     // Calculate last row values (totals) accoring to dataToPlot
     const lastRowTotals = GetLastRawTotals(timesheetDataToPlot);
     let existingProjects = this.state.projectList;
-    console.log('existingProjects:', existingProjects);
 
     return (
       <div className='TS_Container'>
