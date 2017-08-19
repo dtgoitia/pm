@@ -165,20 +165,64 @@ function RoundToNearest(duration, n) {
   return (Math.round(duration / n) * n).toFixed(2)
 }
 function createCalendarEntry(x) {
+  let rounding = 0.01;
   return ({
     elementClassName: 'TS_CalenderRow_GridContainer',
     elementId: null,
     project: x.project,
     task: x.task,
     dep: 'Civil',
-    mon: x.startDate.getDay() === 1 ? x.duration : '0.0',
-    tue: x.startDate.getDay() === 2 ? x.duration : '0.0',
-    wed: x.startDate.getDay() === 3 ? x.duration : '0.0',
-    thu: x.startDate.getDay() === 4 ? x.duration : '0.0',
-    fri: x.startDate.getDay() === 5 ? x.duration : '0.0',
-    sat: x.startDate.getDay() === 6 ? x.duration : '0.0',
+    mon: x.startDate.getDay() === 1 ? RoundToNearest(x.duration, rounding) : '0.0',
+    tue: x.startDate.getDay() === 2 ? RoundToNearest(x.duration, rounding) : '0.0',
+    wed: x.startDate.getDay() === 3 ? RoundToNearest(x.duration, rounding) : '0.0',
+    thu: x.startDate.getDay() === 4 ? RoundToNearest(x.duration, rounding) : '0.0',
+    fri: x.startDate.getDay() === 5 ? RoundToNearest(x.duration, rounding) : '0.0',
+    sat: x.startDate.getDay() === 6 ? RoundToNearest(x.duration, rounding) : '0.0',
     tot: '---'
   })
+}
+
+function joinIDenticalData(dataToPlot) {
+  let returnDataToPlot = [];
+  let taskExists = false;
+  let showLogs = false;
+  dataToPlot.forEach((task, i)=>{
+    showLogs === true ? console.log('Checking task (' + i + '): ' + task.task + ' (' + task.project + ')') : null;
+    
+    // Reset variables for a new loop
+    taskExists = false;
+    
+    if (i === 0) {
+      // Add first entry
+      returnDataToPlot = [dataToPlot[0]];
+    } else {
+      // Check if the project exists
+      returnDataToPlot.forEach( (readyTask, ii) => {
+        showLogs === true ? console.log('\t(' + i + ':' + ii +') Referen: ' + readyTask.task + ' (' + readyTask.project + ')') : null;
+        if ( task.project == readyTask.project && task.task == readyTask.task ) {
+          taskExists = true;
+
+          let sum = returnDataToPlot[ii].duration + task.duration;
+          showLogs === true ? console.log('returnDataToPlot[ii].duration:', returnDataToPlot[ii].duration) : null;
+          showLogs === true ? console.log('task.duration:', task.duration) : null;
+          showLogs === true ? console.log('sum:', sum) : null;
+          
+          returnDataToPlot[ii].duration += task.duration;
+          
+          // console.log('\tJOINED, returnDataToPlot:', returnDataToPlot);
+          showLogs === true ? console.log('\tJOINED') : null;
+          showLogs === true ? console.log('---------------------') : null;
+        }
+        }); // END forEach
+      if (taskExists === false) {
+        returnDataToPlot.push(task);
+        // console.log('\tADDED, returnDataToPlot:', returnDataToPlot);
+      }
+    }
+  });
+  showLogs === true ? console.log('returnDataToPlot:', returnDataToPlot) : null;
+  // return returnDataToPlot
+  return dataToPlot
 }
 
 // TSProjectFilter component -----------------------------------------------
@@ -365,7 +409,7 @@ class TimeSheets extends React.Component {
       return({dataToPlot: this.state.db.map((x) => {
         x.startDate = new Date(x.startDate);
         x.endDate = new Date(x.endDate);
-        x.duration = RoundToNearest(x.duration, 0.25);
+        x.duration = x.duration;
         return x
       })})
     });
@@ -400,18 +444,30 @@ class TimeSheets extends React.Component {
   }
 
   render () {
-    console.log('this.state:', this.state);
+    // --- UI DATA PREPROCESSING ------------------------------------------
+
     // Get first day of the week ploted
     const earliestDate = this.state.dataToPlot
       .map((x) => x.startDate) // Get each task date
       .reduce((pre, cur) => Date.parse(pre) > Date.parse(cur) ? cur : pre); // Get earliest date
     
-      // Prepare dataToPlot
-    const timesheetDataToPlot = this.state.dataToPlot.map((x) => createCalendarEntry(x));
-    
+    console.log('A this.state.db[30].duration:', this.state.db[30] ? this.state.db[30].duration : null);
+    // --- UI BUILDING ---------------------------------------------------
+
+    // Join identical tasks
+    const compactDataToPlot = joinIDenticalData(this.state.dataToPlot);
+    console.log('B this.state.db[30].duration:', this.state.db[30] ? this.state.db[30].duration : null);
+    // Prepare dataToPlot
+    const timesheetDataToPlot = compactDataToPlot.map((x) => createCalendarEntry(x));
+
     // Calculate last row values (totals) accoring to dataToPlot
     const lastRowTotals = GetLastRawTotals(timesheetDataToPlot);
     let existingProjects = this.state.projectList;
+
+
+
+
+    // --- RETURN UI -----------------------------------------------------
 
     return (
       <div className='TS_Container'>
