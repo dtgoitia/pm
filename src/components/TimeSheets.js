@@ -182,45 +182,59 @@ function createCalendarEntry(x) {
   })
 }
 
-function joinIDenticalData(dataToPlot) {
+function joinIdenticalData(dataToPlot) {
+  // console.log('dataToPlot:', dataToPlot);
   let returnDataToPlot = [];
   let taskExists = false;
   let showLogs = false;
   dataToPlot.forEach((task, i)=>{
     showLogs === true ? console.log('Checking task (' + i + '): ' + task.task + ' (' + task.project + ')') : null;
-    
     // Reset variables for a new loop
     taskExists = false;
     
     if (i === 0) {
       // Add first entry
-      returnDataToPlot = [dataToPlot[0]];
+      returnDataToPlot.push(dataToPlot[0]);
     } else {
       // Check if the project exists
       returnDataToPlot.forEach( (readyTask, ii) => {
         showLogs === true ? console.log('\t(' + i + ':' + ii +') Referen: ' + readyTask.task + ' (' + readyTask.project + ')') : null;
-        if ( task.project == readyTask.project && task.task == readyTask.task ) {
+        if (
+          task.project === readyTask.project
+          && task.task === readyTask.task
+          && task.startDate !== readyTask.startDate
+        ) {
           taskExists = true;
-
+          
           let sum = returnDataToPlot[ii].duration + task.duration;
           showLogs === true ? console.log('returnDataToPlot[ii].duration:', returnDataToPlot[ii].duration) : null;
           showLogs === true ? console.log('task.duration:', task.duration) : null;
           showLogs === true ? console.log('sum:', sum) : null;
           
-          returnDataToPlot[ii].duration += task.duration;
+          if (
+            returnDataToPlot[ii].project === "5089 - GWP SN02" &&
+            returnDataToPlot[ii].task === "Update all drawings to latest planning layout"
+          ) {
+            console.log('returnDataToPlot[ii].duration:', returnDataToPlot[ii].duration);
+            console.log('task.duration:', task.duration);
+            console.log('sum:', sum);
+          }
+          returnDataToPlot[ii].duration = readyTask.duration + task.duration;
           
           // console.log('\tJOINED, returnDataToPlot:', returnDataToPlot);
           showLogs === true ? console.log('\tJOINED') : null;
           showLogs === true ? console.log('---------------------') : null;
         }
         }); // END forEach
-      if (taskExists === false) {
-        returnDataToPlot.push(task);
-        // console.log('\tADDED, returnDataToPlot:', returnDataToPlot);
-      }
+        
+        if (taskExists === false) {
+          returnDataToPlot.push(task);
+          // console.log('\tADDED, returnDataToPlot:', returnDataToPlot);
+        }
     }
   });
   showLogs === true ? console.log('returnDataToPlot:', returnDataToPlot) : null;
+  // console.log('dataToPlot:', dataToPlot);
   // return returnDataToPlot
   return dataToPlot
 }
@@ -298,9 +312,24 @@ class TimeSheets extends React.Component {
   constructor (props) {
     super (props);
     this.state = {
-      // db: member to store the raw data of Toggl before formating
-      // Add an "empty" task object for rendering
+      // db: raw data of Toggl
       db: [{
+        project: '-',
+        task: '-',
+        duration: null,
+        startDate: null,
+        endDate: null
+      }],
+      // dbProjectFilter: db after applying project filter
+      dbProjectFilter: [{
+        project: '-',
+        task: '-',
+        duration: null,
+        startDate: null,
+        endDate: null
+      }],
+      // dbJoin: dbProjectFilter after joining identical tasks duration
+      dbJoin: [{
         project: '-',
         task: '-',
         duration: null,
@@ -455,7 +484,9 @@ class TimeSheets extends React.Component {
     // --- UI BUILDING ---------------------------------------------------
 
     // Join identical tasks
-    const compactDataToPlot = joinIDenticalData(this.state.dataToPlot);
+    const compactDataToPlot = joinIdenticalData(this.state.dataToPlot);
+    // const compactDataToPlot = this.state.dataToPlot;
+
     console.log('B this.state.db[30].duration:', this.state.db[30] ? this.state.db[30].duration : null);
     // Prepare dataToPlot
     const timesheetDataToPlot = compactDataToPlot.map((x) => createCalendarEntry(x));
