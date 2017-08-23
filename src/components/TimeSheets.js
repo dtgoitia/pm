@@ -297,9 +297,9 @@ class TSProjectFilterItem extends React.Component {
   render() {
     return (
       <div
-      className='ProjectFilterItem'
-      onClick={this.updateState.bind(null)}
-      style={ this.state.selected === true ? { backgroundColor: 'var(--color-project-filter-selected)'} : { backgroundColor: 'var(--color-project-filter-unselected)'}}
+        className='ProjectFilterItem'
+        onClick={this.updateState.bind(null)}
+        style={ this.state.selected === true ? { backgroundColor: 'var(--color-project-filter-selected)'} : { backgroundColor: 'var(--color-project-filter-unselected)'}}
       >
         {this.props.project}
       </div>
@@ -313,39 +313,13 @@ class TimeSheets extends React.Component {
     super (props);
     this.state = {
       // db: raw data of Toggl
-      db: [{
-        project: '-',
-        task: '-',
-        duration: null,
-        startDate: null,
-        endDate: null
-      }],
+      db: [{ project: '-', task: '-', duration: null, startDate: null, endDate: null }],
       // dbProjectFilter: db after applying project filter
-      dbProjectFilter: [{
-        project: '-',
-        task: '-',
-        duration: null,
-        startDate: null,
-        endDate: null
-      }],
+      dbProjectFilter: [{ project: '-', task: '-', duration: null, startDate: null, endDate: null}],
       // dbJoin: dbProjectFilter after joining identical tasks duration
-      dbJoin: [{
-        project: '-',
-        task: '-',
-        duration: null,
-        startDate: null,
-        endDate: null
-      }],
+      dbJoin: [{ project: '-', task: '-', duration: null, startDate: null, endDate: null }],
       // dataPlot contains final data to be ploted in the timesheet
-      dataToPlot: [
-        {
-          project: '-',
-          task: '-',
-          duration: null,
-          startDate: new Date(null),
-          endDate: new Date(null)
-        }
-      ],
+      dataToPlot: [{ project: '-', task: '-', duration: null, startDate: new Date(null), endDate: new Date(null) }],
       plotStartDate: '2017-07-03',
       plotEndDate:  '2017-07-07',
       // projectList: member to store all the projects existing in db
@@ -426,39 +400,37 @@ class TimeSheets extends React.Component {
 
   // Pull data from Toggl and add it to the state of TimeSheets component
   storeData(data) {
-    // Store raw data fetched from Toggl
-    this.setState(()=>{
-      return({db: data})
-    });
-
-    // Format data:
-    //  - set startDate and endDate as Date type
-    //  - round duration to nearest 0.25
-    this.setState(()=>{
-      return({dataToPlot: this.state.db.map((x) => {
-        x.startDate = new Date(x.startDate);
-        x.endDate = new Date(x.endDate);
-        x.duration = x.duration;
-        return x
-      })})
-    });
-
-    // Get projects
+    
+    // Get a list of all available projects
     let projectArray = [];
-    this.state.db.forEach((x)=>{
+    data.forEach((x)=>{
       if (-1 === projectArray.indexOf(x.project)) {
         projectArray.push(x.project);
-      }
+      }});
+    
+    const dataToPlotVar = data.map((x) => { // Format data:
+      x.startDate = new Date(x.startDate);  //  - set startDate as Date type
+      x.endDate = new Date(x.endDate);      //  - set   endDate as Date type
+      x.duration = x.duration;              //  - round duration to nearest 0.25
+      return x
     });
+
+    // Set state
     this.setState(()=>{
       return (
         {
-          projectList: projectArray,
-          projectsToPlot: projectArray
+          db: data,                       // Store raw data fetched from Toggl
+          projectList: projectArray,      // Store the projects available in raw data
+          dataToPlot: dataToPlotVar,      // Store the data to print on screen
+          projectsToPlot: projectArray    // Store the projects to print on screen
         }
       )
     });
+
+    
   }
+
+
 
   getProjects() {
     // let existingProjects = this.state.projectList;
