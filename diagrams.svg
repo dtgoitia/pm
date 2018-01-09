@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="diagrams.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker7923"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path7925"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker7773"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path7775" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7055"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7057"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6857"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path6859"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path5003"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5000"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-7"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5003-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="781.88303"
+     inkscape:cy="676.40263"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="info"
+     style="display:inline">
+    <g
+       id="g4834"
+       transform="translate(-286.19641,555.83112)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4836"
+         y="52.311184"
+         x="22.223356"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+           y="52.311184"
+           x="22.223356"
+           id="tspan4838"
+           sodipodi:role="line">joinIdenticalData(dataToPlot)</tspan></text>
+    </g>
+    <g
+       id="g6489">
+      <g
+         transform="translate(4.121826,16.16244)"
+         id="g4638">
+        <rect
+           y="8.3695488"
+           x="8.0812206"
+           height="645.77423"
+           width="419.57581"
+           id="rect4640"
+           style="display:inline;opacity:1;fill:#cdf6cd;fill-opacity:1;stroke:#969696;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4642"
+           y="30.592903"
+           x="13.637059"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+             y="30.592903"
+             x="13.637059"
+             id="tspan4644"
+             sodipodi:role="line">TimeSheets</tspan></text>
+        <g
+           id="g4646">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4648"
+             y="52.311184"
+             x="22.223356"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="52.311184"
+               x="22.223356"
+               id="tspan4650"
+               sodipodi:role="line">state</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="32.82996"
+             y="69.988853"
+             id="text4652"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan4654"
+               x="32.82996"
+               y="69.988853"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';">plotStartDate</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="88.738853"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4656">plotEndDate</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="107.48885"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4658">db</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="126.23885"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4660">projectList</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="144.98886"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4662">projectsToPlot</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="163.73886"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4664">dbProjectFilter</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="182.48886"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4666">dbJoin</tspan><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="201.23886"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4668">dataToPlot</tspan></text>
+        </g>
+        <text
+           sodipodi:linespacing="125%"
+           id="text4670"
+           y="503.8895"
+           x="20.687105"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+             y="503.8895"
+             x="20.687105"
+             sodipodi:role="line"
+             id="tspan4672">seeState()</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+           x="20.687105"
+           y="528.85358"
+           id="text4674"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan4676"
+             sodipodi:role="line"
+             x="20.687105"
+             y="528.85358"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';">getProjects()</tspan></text>
+        <g
+           id="g4678">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4680"
+             y="234.27457"
+             x="20.687105"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="234.27457"
+               x="20.687105"
+               sodipodi:role="line"
+               id="tspan4682">storeData(rawData)</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4684"
+             y="252.46304"
+             x="32.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               id="tspan4686"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="252.46304"
+               x="32.82996"
+               sodipodi:role="line">setState:</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="47.82996"
+             y="271.74875"
+             id="text4688"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="47.82996"
+               y="271.74875"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4690">dataToPlot: state.db.map()</tspan><tspan
+               id="tspan4692"
+               sodipodi:role="line"
+               x="47.82996"
+               y="290.49875"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';">projectList: state.db.map()</tspan><tspan
+               sodipodi:role="line"
+               x="47.82996"
+               y="309.24875"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4694">projectsToPlot: projectList</tspan></text>
+        </g>
+        <g
+           transform="translate(0,103.57143)"
+           id="g4696">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="20.687105"
+             y="234.27457"
+             id="text4698"
+             sodipodi:linespacing="125%"><tspan
+               id="tspan4700"
+               sodipodi:role="line"
+               x="20.687105"
+               y="234.27457"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';">hideProject(project)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="32.82996"
+             y="252.46304"
+             id="text4702"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="252.46304"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4704">setState:</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4706"
+             y="271.74875"
+             x="47.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               id="tspan4708"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="271.74875"
+               x="47.82996"
+               sodipodi:role="line">projectsToPlot: projectsToPlot - project</tspan><tspan
+               id="tspan4710"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="290.49875"
+               x="47.82996"
+               sodipodi:role="line">dataToPlot: state.db.map() - project</tspan></text>
+        </g>
+        <g
+           id="g4712"
+           transform="translate(0,183.57143)">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4714"
+             y="234.27457"
+             x="20.687105"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="234.27457"
+               x="20.687105"
+               sodipodi:role="line"
+               id="tspan4716">showProject(project)</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4718"
+             y="252.46304"
+             x="32.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               id="tspan4720"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="252.46304"
+               x="32.82996"
+               sodipodi:role="line">setState:</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="47.82996"
+             y="271.74875"
+             id="text4722"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="47.82996"
+               y="271.74875"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4724">projectsToPlot*: projectsToPlot + project</tspan><tspan
+               sodipodi:role="line"
+               x="47.82996"
+               y="290.49875"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4726">dataToPlot: state.db.map() + projectsToPlot*</tspan></text>
+        </g>
+        <g
+           transform="translate(0,323.57143)"
+           id="g4728">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="20.687105"
+             y="234.27457"
+             id="text4730"
+             sodipodi:linespacing="125%"><tspan
+               id="tspan4732"
+               sodipodi:role="line"
+               x="20.687105"
+               y="234.27457"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';">render()</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             x="32.82996"
+             y="252.46304"
+             id="text4734"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="252.46304"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               id="tspan4736">-earliestDate = state.dataToPlot.map().reduce()</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4738"
+             y="272.46304"
+             x="32.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+             xml:space="preserve"><tspan
+               id="tspan4740"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="272.46304"
+               x="32.82996"
+               sodipodi:role="line">-compactDataToPlot = joinIdenticalData(state.dataToPlot)</tspan><tspan
+               id="tspan4742"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="291.21304"
+               x="32.82996"
+               sodipodi:role="line">-timesheetDataToPlot = compactDataToPlot.map()</tspan><tspan
+               id="tspan4744"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';"
+               y="309.96304"
+               x="32.82996"
+               sodipodi:role="line">-lastRowTotals = GetLastRawTotals(timesheetDataToPlot)</tspan></text>
+        </g>
+      </g>
+      <g
+         transform="translate(4.121826,670.5165)"
+         id="g4870">
+        <rect
+           y="8.3695488"
+           x="8.0812206"
+           height="223.53047"
+           width="209.46407"
+           id="rect4872"
+           style="display:inline;opacity:1;fill:#cdf6cd;fill-opacity:1;stroke:#969696;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4874"
+           y="30.592903"
+           x="13.637059"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="30.592903"
+             x="13.637059"
+             id="tspan4876"
+             sodipodi:role="line">TSProjectFilterItem</tspan></text>
+        <g
+           id="g4878">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4880"
+             y="52.311184"
+             x="22.223356"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="52.311184"
+               x="22.223356"
+               id="tspan4882"
+               sodipodi:role="line">state</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="32.82996"
+             y="69.988853"
+             id="text4884"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="32.82996"
+               y="69.988853"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               id="tspan4886">selected</tspan></text>
+        </g>
+        <g
+           transform="translate(0,-56)"
+           id="g4888">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4890"
+             y="234.27457"
+             x="20.687105"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="234.27457"
+               x="20.687105"
+               sodipodi:role="line"
+               id="tspan4892">updateState()</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4894"
+             y="252.46304"
+             x="32.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               id="tspan4896"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="252.46304"
+               x="32.82996"
+               sodipodi:role="line">setState:</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="47.82996"
+             y="271.74875"
+             id="text4898"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               x="47.82996"
+               y="271.74875"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               id="tspan4900">selected: state.selected</tspan></text>
+        </g>
+        <g
+           transform="translate(0,40)"
+           id="g4902">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="22.223356"
+             y="52.311184"
+             id="text4904"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan4906"
+               x="22.223356"
+               y="52.311184"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">props</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4908"
+             y="69.988853"
+             x="32.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               id="tspan4910"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="69.988853"
+               x="32.82996"
+               sodipodi:role="line">project</tspan><tspan
+               id="tspan4974"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="88.738853"
+               x="32.82996"
+               sodipodi:role="line">hideProject()</tspan><tspan
+               id="tspan4976"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="107.48885"
+               x="32.82996"
+               sodipodi:role="line">showProject()</tspan></text>
+        </g>
+      </g>
+      <g
+         transform="translate(258.68028,671.24093)"
+         id="g4945">
+        <rect
+           y="8.3695488"
+           x="8.0812206"
+           height="95.241112"
+           width="165.01735"
+           id="rect4947"
+           style="display:inline;opacity:1;fill:#cdf6cd;fill-opacity:1;stroke:#969696;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4949"
+           y="30.592903"
+           x="13.637059"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="30.592903"
+             x="13.637059"
+             id="tspan4951"
+             sodipodi:role="line">TSProjectFilter</tspan></text>
+        <g
+           id="g4953">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="22.223356"
+             y="52.311184"
+             id="text4955"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan4957"
+               x="22.223356"
+               y="52.311184"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">props</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4959"
+             y="69.988853"
+             x="32.82996"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               id="tspan4961"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="69.988853"
+               x="32.82996"
+               sodipodi:role="line">hideProject()</tspan><tspan
+               id="tspan4963"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+               y="88.738853"
+               x="32.82996"
+               sodipodi:role="line">showProject()</tspan></text>
+        </g>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4978"
+         y="-26.42458"
+         x="270.63382"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-26.42458"
+           x="270.63382"
+           id="tspan4980"
+           sodipodi:role="line">pull data from Toggl</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4994"
+         d="m 18.182745,245.25032 c -141.163555,82.42492 -137.544425,276.29955 0,323.24881"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4994-2"
+         d="M 360.37887,-17.846354 C 362.35086,93.962272 285.73511,174.60666 189.13805,242.6069"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-7)" />
+    </g>
+    <g
+       transform="translate(604.12183,16.16244)"
+       id="g6584">
+      <rect
+         y="8.3695488"
+         x="8.0812206"
+         height="645.77423"
+         width="419.57581"
+         id="rect6586"
+         style="display:inline;opacity:1;fill:#cdf6cd;fill-opacity:1;stroke:#969696;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text6588"
+         y="30.592903"
+         x="13.637059"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+           y="30.592903"
+           x="13.637059"
+           id="tspan6590"
+           sodipodi:role="line">TimeSheets</tspan></text>
+      <g
+         id="g6592">
+        <text
+           sodipodi:linespacing="125%"
+           id="text6594"
+           y="52.311184"
+           x="22.223356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="52.311184"
+             x="22.223356"
+             id="tspan6596"
+             sodipodi:role="line">state</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="32.82996"
+           y="69.988853"
+           id="text6598"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan6600"
+             x="32.82996"
+             y="69.988853"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">plotStartDate</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="88.738853"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6602">plotEndDate</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="107.48885"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6604">db</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="126.23885"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6606">projectList</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="144.98886"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6608">projectsToPlot</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="163.73886"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6610">dbProjectFilter</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="182.48886"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6612">dbJoin</tspan><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="201.23886"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6614">dataToPlot</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text6616"
+         y="503.8895"
+         x="20.687105"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+           y="503.8895"
+           x="20.687105"
+           sodipodi:role="line"
+           id="tspan6618">seeState()</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="20.687105"
+         y="528.85358"
+         id="text6620"
+         sodipodi:linespacing="125%"><tspan
+           id="tspan6622"
+           sodipodi:role="line"
+           x="20.687105"
+           y="528.85358"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">getProjects()</tspan></text>
+      <g
+         id="g6624">
+        <text
+           sodipodi:linespacing="125%"
+           id="text6626"
+           y="234.27457"
+           x="20.687105"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="234.27457"
+             x="20.687105"
+             sodipodi:role="line"
+             id="tspan6628">storeData(rawData)</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6630"
+           y="252.46304"
+           x="32.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6632"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="252.46304"
+             x="32.82996"
+             sodipodi:role="line">setState:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="47.82996"
+           y="271.74875"
+           id="text6634"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="47.82996"
+             y="271.74875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6636">dataToPlot: state.db.map()</tspan><tspan
+             id="tspan6638"
+             sodipodi:role="line"
+             x="47.82996"
+             y="290.49875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">projectList: state.db.map()</tspan><tspan
+             sodipodi:role="line"
+             x="47.82996"
+             y="309.24875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6640">projectsToPlot: projectList</tspan></text>
+      </g>
+      <g
+         transform="translate(0,103.57143)"
+         id="g6642">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="20.687105"
+           y="234.27457"
+           id="text6644"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan6646"
+             sodipodi:role="line"
+             x="20.687105"
+             y="234.27457"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">hideProject(project)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="32.82996"
+           y="252.46304"
+           id="text6648"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="252.46304"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6650">setState:</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6652"
+           y="271.74875"
+           x="47.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6654"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="271.74875"
+             x="47.82996"
+             sodipodi:role="line">projectsToPlot: projectsToPlot - project</tspan><tspan
+             id="tspan6656"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="290.49875"
+             x="47.82996"
+             sodipodi:role="line">dataToPlot: state.db.map() - project</tspan></text>
+      </g>
+      <g
+         id="g6658"
+         transform="translate(0,183.57143)">
+        <text
+           sodipodi:linespacing="125%"
+           id="text6660"
+           y="234.27457"
+           x="20.687105"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="234.27457"
+             x="20.687105"
+             sodipodi:role="line"
+             id="tspan6662">showProject(project)</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6664"
+           y="252.46304"
+           x="32.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6666"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="252.46304"
+             x="32.82996"
+             sodipodi:role="line">setState:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="47.82996"
+           y="271.74875"
+           id="text6668"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="47.82996"
+             y="271.74875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6670">projectsToPlot*: projectsToPlot + project</tspan><tspan
+             sodipodi:role="line"
+             x="47.82996"
+             y="290.49875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6672">dataToPlot: state.db.map() + projectsToPlot*</tspan></text>
+      </g>
+      <g
+         transform="translate(0,323.57143)"
+         id="g6674">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="20.687105"
+           y="234.27457"
+           id="text6676"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan6678"
+             sodipodi:role="line"
+             x="20.687105"
+             y="234.27457"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">render()</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="32.82996"
+           y="252.46304"
+           id="text6680"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="252.46304"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6682">-earliestDate = state.dataToPlot.map().reduce()</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6684"
+           y="272.46304"
+           x="32.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6686"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="272.46304"
+             x="32.82996"
+             sodipodi:role="line">-compactDataToPlot = joinIdenticalData(state.dataToPlot)</tspan><tspan
+             id="tspan6688"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="291.21304"
+             x="32.82996"
+             sodipodi:role="line">-timesheetDataToPlot = compactDataToPlot.map()</tspan><tspan
+             id="tspan6690"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="309.96304"
+             x="32.82996"
+             sodipodi:role="line">-lastRowTotals = GetLastRawTotals(timesheetDataToPlot)</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="translate(604.12183,670.5165)"
+       id="g6692">
+      <rect
+         y="8.3695488"
+         x="8.0812206"
+         height="223.53047"
+         width="209.46407"
+         id="rect6694"
+         style="display:inline;opacity:1;fill:#cdf6cd;fill-opacity:1;stroke:#969696;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text6696"
+         y="30.592903"
+         x="13.637059"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+           y="30.592903"
+           x="13.637059"
+           id="tspan6698"
+           sodipodi:role="line">TSProjectFilterItem</tspan></text>
+      <g
+         id="g6700">
+        <text
+           sodipodi:linespacing="125%"
+           id="text6702"
+           y="52.311184"
+           x="22.223356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="52.311184"
+             x="22.223356"
+             id="tspan6704"
+             sodipodi:role="line">state</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="32.82996"
+           y="69.988853"
+           id="text6706"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="32.82996"
+             y="69.988853"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6708">selected</tspan></text>
+      </g>
+      <g
+         transform="translate(0,-56)"
+         id="g6710">
+        <text
+           sodipodi:linespacing="125%"
+           id="text6712"
+           y="234.27457"
+           x="20.687105"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="234.27457"
+             x="20.687105"
+             sodipodi:role="line"
+             id="tspan6714">updateState()</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6716"
+           y="252.46304"
+           x="32.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6718"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="252.46304"
+             x="32.82996"
+             sodipodi:role="line">setState:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="47.82996"
+           y="271.74875"
+           id="text6720"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="47.82996"
+             y="271.74875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             id="tspan6722">selected: state.selected</tspan></text>
+      </g>
+      <g
+         transform="translate(0,40)"
+         id="g6724">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="22.223356"
+           y="52.311184"
+           id="text6726"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan6728"
+             x="22.223356"
+             y="52.311184"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">props</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6730"
+           y="69.988853"
+           x="32.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6732"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="69.988853"
+             x="32.82996"
+             sodipodi:role="line">project</tspan><tspan
+             id="tspan6734"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="88.738853"
+             x="32.82996"
+             sodipodi:role="line">hideProject()</tspan><tspan
+             id="tspan6736"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="107.48885"
+             x="32.82996"
+             sodipodi:role="line">showProject()</tspan></text>
+      </g>
+    </g>
+    <g
+       transform="translate(858.68028,671.24093)"
+       id="g6738">
+      <rect
+         y="8.3695488"
+         x="8.0812206"
+         height="95.241112"
+         width="165.01735"
+         id="rect6740"
+         style="display:inline;opacity:1;fill:#cdf6cd;fill-opacity:1;stroke:#969696;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text6742"
+         y="30.592903"
+         x="13.637059"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+           y="30.592903"
+           x="13.637059"
+           id="tspan6744"
+           sodipodi:role="line">TSProjectFilter</tspan></text>
+      <g
+         id="g6746">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="22.223356"
+           y="52.311184"
+           id="text6748"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan6750"
+             x="22.223356"
+             y="52.311184"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'">props</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text6752"
+           y="69.988853"
+           x="32.82996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6754"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="69.988853"
+             x="32.82996"
+             sodipodi:role="line">hideProject()</tspan><tspan
+             id="tspan6756"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans'"
+             y="88.738853"
+             x="32.82996"
+             sodipodi:role="line">showProject()</tspan></text>
+      </g>
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6758"
+       y="-26.42458"
+       x="870.63379"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-26.42458"
+         x="870.63379"
+         id="tspan6760"
+         sodipodi:role="line">updateProject</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6762"
+       d="m 618.18274,356.67889 c -141.16355,82.42492 -137.54442,164.87098 0,211.82024"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7773)" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6764"
+       d="M 960.37887,-17.846354 C 962.35086,93.962272 953.23512,353.89237 786.63806,350.46404"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6857)" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7055)"
+       d="M 960.37887,-17.846354 C 962.35086,93.962272 1050.0208,468.89237 797.70948,428.32118"
+       id="path7053"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7923)"
+       d="m 618.89703,428.10746 c -141.16355,82.42492 -33.25871,131.29955 -0.71429,140.39167"
+       id="path7921"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
